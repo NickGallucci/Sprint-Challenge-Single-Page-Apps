@@ -1,10 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Card, Button } from 'semantic-ui-react';
+import styled from'styled-components';
 
-export default function LocationCard({ name, type, dimension, residents, id }) {
-  return (
-    <Link to={`/location/${id}`}>
-      <span>todo: location</span>
-    </Link>
-  );
+export default function LocationCard({ name, dimension, residents }) {
+
+  const StyledCard = styled(Card) `
+  font-size: 1.5rem;
+  width: 30%;
+`
+  return(
+    <StyledCard>
+      <h2>{name}</h2> <br/>
+      <p>{dimension}</p>
+      <Button>Residents: {residents}</Button>
+    </StyledCard>
+  )
 }

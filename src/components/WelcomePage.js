@@ -5,8 +5,6 @@ import styled from "styled-components";
 //Styles
 const HeaderContainer = styled.div`
   text-align: center;
-  display: flex;
-  justify-content: space-between;
 `;
 
 //Welcome Page Function

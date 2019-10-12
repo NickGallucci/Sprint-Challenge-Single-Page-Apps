@@ -5,6 +5,7 @@ import styled from "styled-components";
 import CharacterList from "./components/CharacterList";
 import CharacterCard from "./components//CharacterCard";
 import WelcomePage from "./components/WelcomePage";
+import LocationsList from './components/LocationsList';
 
 
 //Styles
@@ -31,16 +32,16 @@ export default function App() {
         <Links>
           <Link to="/">Home Page</Link>
           <Link to="/CharacterList">Characters</Link>
+          <Link to="/LocationsList">Location</Link>
         </Links>
       </NavLinks>
       <Header />
 
-      {/* Route */}
       <Route exact path="/" component={Header} />
       <Route exact path="/" component={WelcomePage} />
       <Route exact path="/CharacterList" component={CharacterList} />
       <Route path="/character-list/" component={CharacterCard} />
-      {/* <Route path="/LocationList" component={LocationList} /> */}
+      <Route path="/Locations-List" component={Location} />
     </main>
   );
 }
